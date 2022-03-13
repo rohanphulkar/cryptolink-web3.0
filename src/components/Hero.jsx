@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { SiEthereum } from "react-icons/si";
 import { TransactionContext } from "../context/TransactionContext";
 import Transactions from "./Transactions";
@@ -14,14 +14,8 @@ const Input = ({ name, type, value, handleChange }) => (
   />
 );
 const Hero = () => {
-  const {
-    connectWallet,
-    currentAccount,
-    formData,
-    sendTransaction,
-    handleChange,
-    isLoading,
-  } = useContext(TransactionContext);
+  const { currentAccount, formData, sendTransaction, handleChange, isLoading } =
+    useContext(TransactionContext);
 
   const handleSubmit = (e) => {
     const { addressTo, amount, keyword, message } = formData;

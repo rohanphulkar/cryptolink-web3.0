@@ -12,13 +12,17 @@ const CoinDetail = () => {
     const data = await res.data;
     setCoin(data);
   };
-  useEffect(() => getCoins(), []);
+  useEffect(() => getCoins(), [id]);
   return (
     <div className="flex items-center justify center py-auto">
       {coin ? (
         <div className="p-4  container mx-auto w-full text-center bg-white rounded-lg  sm:p-8 ">
           <div className="flex flex-col items-center">
-            <img src={coin.image.large} className="w-28 md:w-32 " />
+            <img
+              src={coin.image.large}
+              className="w-28 md:w-32 "
+              alt={coin.name}
+            />
             <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
               {coin.name}
             </h5>

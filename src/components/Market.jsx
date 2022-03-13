@@ -102,6 +102,7 @@ const Market = () => {
                             <img
                               src={coin.image}
                               className="w-14 md:w-16  md:h-16"
+                              alt={coin.name}
                             />
                           </td>
                           <td className="py-4 px-6 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
