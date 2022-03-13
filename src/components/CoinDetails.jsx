@@ -12,7 +12,11 @@ const CoinDetail = () => {
     const data = await res.data;
     setCoin(data);
   };
-  useEffect(() => getCoins(), [id]);
+  useEffect(
+    () => getCoins(),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
+  );
   return (
     <div className="flex items-center justify center py-auto">
       {coin ? (

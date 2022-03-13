@@ -19,7 +19,11 @@ const Market = () => {
     const data = await res.data;
     setCoins(data);
   };
-  useEffect(() => getCoins(), []);
+  useEffect(
+    () => getCoins(),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
+  );
   return (
     <div className="container mx-auto">
       <div className="flex flex-col">
