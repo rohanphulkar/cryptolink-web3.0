@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <>
       <section>
-        <div className="dark:bg-violet-400">
+        <div className="bg-violet-400">
           <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-coolGray-900">
             <h1 className="text-5xl font-semibold leading-none sm:text-6xl xl:max-w-3xl dark:text-coolGray-900">
               Send crypto without any hassle.
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/3 mx-auto mb-12 -mt-20 rounded-lg  lg:-mt-40 ">
+        <div className="w-full md:w-1/3 mx-auto mb-12 -mt-20 rounded-lg  lg:-mt-40 bg-violet-400">
           <div className="p-8 rounded ">
             <h1 className="font-medium text-3xl">Send Crypto</h1>
 
